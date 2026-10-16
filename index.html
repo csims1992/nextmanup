@@ -60,9 +60,14 @@ section{padding:70px 0}
 .day .t{font-weight:800;margin:6px 0}
 .day p{color:var(--mut);font-size:.95rem}
 .cta{text-align:center}
-.cta .bh-embed{margin:0 auto}
-.bh-embed{max-width:560px;min-height:80px;background:var(--panel);border:2px solid var(--line);border-left:4px solid var(--acc);border-radius:10px;padding:14px}
-.bh-embed iframe{max-width:100%;border-radius:6px}
+.cta .kit-form{margin:0 auto}
+.kit-form{display:flex;gap:10px;max-width:560px;background:var(--panel);border:2px solid var(--line);border-left:4px solid var(--acc);border-radius:10px;padding:14px}
+.kit-input{flex:1;min-width:0;background:var(--bg);color:var(--txt);border:1px solid var(--line);border-radius:6px;padding:12px 14px;font:inherit;font-size:1rem}
+.kit-input:focus{outline:none;border-color:var(--acc);box-shadow:0 0 0 2px rgba(198,255,0,.25)}
+.kit-btn{background:var(--acc);color:#0b0d12;border:0;border-radius:6px;padding:12px 20px;font-family:Anton,Impact,sans-serif;font-size:1.05rem;letter-spacing:.5px;text-transform:uppercase;cursor:pointer}
+.kit-btn:hover{filter:brightness(1.1)}
+.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0)}
+@media(max-width:560px){.kit-form{flex-direction:column}}
 footer{border-top:1px solid var(--line);padding:40px 0;font-size:.85rem;color:var(--mut)}
 .rg{display:flex;gap:16px;align-items:flex-start;background:#120e0e;border:1px solid #3a1f1f;border-radius:10px;padding:20px;margin-bottom:22px}
 .badge{flex:0 0 auto;font-family:Anton,Impact,sans-serif;font-size:1.6rem;background:var(--hot);color:#fff;padding:6px 12px;border-radius:6px}
@@ -78,7 +83,11 @@ footer{border-top:1px solid var(--line);padding:40px 0;font-size:.85rem;color:va
   <h1>When a starter goes down,<br><em>somebody eats.</em></h1>
   <p class="lead">Next Man Up is a free newsletter for big betting days. We flag the injuries that matter — and, more importantly, the backups stepping in and the players whose matchups just got easier — as player-prop angles worth a look.</p>
   <div class="signup">
-    <div class="bh-embed"><script async src="https://subscribe-forms.beehiiv.com/v3/loader.js" data-beehiiv-form="1b82fcf1-3961-41ce-936c-69ccf6574ca2"></script></div>
+    <form class="kit-form" action="https://app.kit.com/forms/10054986/subscriptions" method="post" data-sv-form="10054986" data-uid="9f09dc0a8d">
+      <label class="sr" for="em1">Email address</label>
+      <input id="em1" class="kit-input" type="email" name="email_address" placeholder="you@email.com" autocomplete="email" required>
+      <button class="kit-btn" type="submit">Get the edge</button>
+    </form>
     <p class="fine">Free. Unsubscribe anytime. 21+ only.</p>
   </div>
   <div class="slate"><span>🏈 TNF</span><span>🏈 Top 25 / Power 5 CFB</span><span>🏈 Sunday NFL</span><span>⚾ MLB</span><span>🏀 NBA</span><span>⛳ PGA Tour</span></div>
@@ -122,7 +131,11 @@ footer{border-top:1px solid var(--line);padding:40px 0;font-size:.85rem;color:va
   <h2 class="sec-h">Be ready when the starter isn't.</h2>
   <p class="sec-sub" style="margin:0 auto 28px">Join free and get the next edition before kickoff.</p>
   <div class="signup">
-    <div class="bh-embed"><script async src="https://subscribe-forms.beehiiv.com/v3/loader.js" data-beehiiv-form="1b82fcf1-3961-41ce-936c-69ccf6574ca2"></script></div>
+    <form class="kit-form" action="https://app.kit.com/forms/10054986/subscriptions" method="post" data-sv-form="10054986" data-uid="9f09dc0a8d">
+      <label class="sr" for="em2">Email address</label>
+      <input id="em2" class="kit-input" type="email" name="email_address" placeholder="you@email.com" autocomplete="email" required>
+      <button class="kit-btn" type="submit">Get the edge</button>
+    </form>
   </div>
 </div></section>
 
