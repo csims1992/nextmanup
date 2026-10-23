@@ -18,6 +18,9 @@ h1,h2,h3,.disp{font-family:Anton,Impact,sans-serif;text-transform:uppercase;lett
 nav{padding:18px 0;border-bottom:1px solid var(--line)}
 .logo{font-family:Anton,Impact,sans-serif;font-size:1.5rem;letter-spacing:1px}
 .logo span{color:var(--acc)}
+nav .wrap{display:flex;align-items:center;justify-content:space-between;gap:16px}
+.navlink{font-weight:800;font-size:.85rem;letter-spacing:1.5px;text-transform:uppercase;text-decoration:none}
+.navlink:hover{color:#fff}
 .hero{padding:80px 0 70px;background:
  repeating-linear-gradient(115deg,transparent 0 60px,rgba(198,255,0,.03) 60px 62px),
  radial-gradient(ellipse at 80% 0%,rgba(255,61,61,.18),transparent 60%),
@@ -76,7 +79,7 @@ footer{border-top:1px solid var(--line);padding:40px 0;font-size:.85rem;color:va
 </style>
 </head>
 <body>
-<nav><div class="wrap"><div class="logo">NEXT MAN <span>UP</span></div></div></nav>
+<nav><div class="wrap"><div class="logo">NEXT MAN <span>UP</span></div><a class="navlink" href="/record/">Record</a></div></nav>
 
 <header class="hero"><div class="wrap">
   <div class="tag">Injury report → Prop angles</div>
@@ -142,6 +145,7 @@ footer{border-top:1px solid var(--line);padding:40px 0;font-size:.85rem;color:va
 <footer><div class="wrap">
   <div class="rg"><div class="badge">21+</div><div><strong>Gamble responsibly.</strong> You must be 21 or older to gamble. If you or someone you know has a gambling problem and wants help, call <strong><a href="tel:18004264237">1-800-GAMBLER</a></strong>. Sports betting involves risk; only wager what you can afford to lose. Check the laws in your state.</div></div>
   <p>Next Man Up is for informational and entertainment purposes only and is not betting, financial, or legal advice. No outcome is guaranteed. We are not a sportsbook and do not accept wagers.</p>
+  <p style="margin-top:10px"><a href="/record/">Record</a></p>
   <p style="margin-top:10px">© <span id="yr"></span> Next Man Up</p>
 </div></footer>
 
