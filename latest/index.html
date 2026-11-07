@@ -9,12 +9,38 @@
 <script>location.replace("/issues/2026-11-05.html");</script>
 <style>
 :root{--bg:#0b0d12;--panel:#141823;--line:#232a3a;--txt:#e8ecf4;--mut:#9aa4b8;--acc:#c6ff00}
-body{background:var(--bg);color:var(--txt);font-family:Inter,system-ui,sans-serif;line-height:1.6;display:flex;min-height:100vh;align-items:center;justify-content:center;margin:0}
-.box{background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:2rem 2.5rem;text-align:center}
-.logo span{color:var(--acc)}a{color:var(--acc);font-weight:600}p{color:var(--mut)}
+body{background:var(--bg);color:var(--txt);font-family:Inter,system-ui,sans-serif;line-height:1.6;margin:0}
+.page{max-width:640px;margin:0 auto;padding:28px 16px 40px}
+#signup{background:var(--panel);border:2px solid var(--line);border-left:4px solid var(--acc);border-radius:10px;padding:16px 18px}
+#signup .pitch{margin:0 0 12px}
+#signup a{color:var(--acc)}
+.kit-form{display:flex;gap:10px;flex-wrap:wrap;margin:0}
+.kit-input{flex:1 1 220px;min-width:0;background:var(--bg);color:var(--txt);border:1px solid var(--line);border-radius:6px;padding:12px 14px;font:inherit;font-size:1rem}
+.kit-input:focus{outline:none;border-color:var(--acc)}
+.kit-btn{background:var(--acc);color:#0b0d12;border:0;border-radius:6px;padding:12px 20px;font-family:Anton,Impact,sans-serif;font-size:1.05rem;letter-spacing:.5px;text-transform:uppercase;cursor:pointer}
+.fine{font-size:.82rem;color:var(--mut);margin:12px 0 0}
+.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0)}
+.box{background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:2rem 2.5rem;text-align:center;margin-top:28px}
+.logo span{color:var(--acc)}
+.box a{color:var(--acc);font-weight:600}
+.box p{color:var(--mut)}
+.forward{color:var(--mut);margin-top:22px}
+@media(max-width:560px){.kit-form{flex-direction:column}.kit-input{flex:1 1 auto;width:100%}}
 </style>
 </head>
-<body><div class="box"><h1 class="logo">Next Man <span>Up</span></h1>
+<body><div class="page">
+<div id="signup">
+<p class="pitch">Get the next-man-up props before the lines move. Free, Thu/Sat/Sun. Join and get the free <a href="/cheatsheet/">Sunday Inactives &amp; Backup-Player Cheat Sheet</a>.</p>
+<form class="kit-form" action="https://app.kit.com/forms/10054986/subscriptions" method="post" data-sv-form="10054986" data-uid="9f09dc0a8d">
+<label class="sr" for="em-latest">Email address</label>
+<input id="em-latest" class="kit-input" type="email" name="email_address" placeholder="you@email.com" autocomplete="email" required>
+<button class="kit-btn" type="submit">Get the edge</button>
+</form>
+<p class="fine">Free. Unsubscribe anytime. 21+ only.</p>
+</div>
+<div class="box"><h1 class="logo">Next Man <span>Up</span></h1>
 <p>Taking you to the latest issue…</p>
-<a href="/issues/2026-11-05.html">Read the latest issue →</a></div></body>
+<a href="/issues/2026-11-05.html">Read the latest issue →</a></div>
+<p class="forward">Know someone who bets props? Forward this — they can join free at <a href="https://nextmanuptakes.blog">nextmanuptakes.blog</a>.</p>
+</div></body>
 </html>

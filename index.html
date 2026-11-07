@@ -35,6 +35,7 @@ input[type=email]:focus{outline:none;border-color:var(--acc)}
 button{flex:0 0 auto;padding:16px 26px;font-family:Anton,Impact,sans-serif;font-size:1.1rem;letter-spacing:1px;text-transform:uppercase;background:var(--acc);color:#0b0d12;border:0;border-radius:6px;cursor:pointer;transition:transform .1s}
 button:hover{transform:translateY(-2px)}
 .fine{font-size:.82rem;color:var(--mut);margin-top:12px}
+.signup-pitch{color:var(--txt);font-size:1.05rem;max-width:640px;margin:0 0 16px}
 .slate{display:flex;flex-wrap:wrap;gap:8px;margin-top:34px}
 .slate span{border:1px solid var(--line);padding:6px 12px;border-radius:999px;font-size:.8rem;font-weight:600;color:var(--mut);background:var(--panel)}
 section{padding:70px 0}
@@ -70,12 +71,12 @@ section{padding:70px 0}
 .kit-btn{background:var(--acc);color:#0b0d12;border:0;border-radius:6px;padding:12px 20px;font-family:Anton,Impact,sans-serif;font-size:1.05rem;letter-spacing:.5px;text-transform:uppercase;cursor:pointer}
 .kit-btn:hover{filter:brightness(1.1)}
 .sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0)}
-@media(max-width:560px){.kit-form{flex-direction:column}}
+@media(max-width:560px){.kit-form{flex-direction:column}.kit-form .kit-input{flex:1 1 auto;width:100%}}
 footer{border-top:1px solid var(--line);padding:40px 0;font-size:.85rem;color:var(--mut)}
 .rg{display:flex;gap:16px;align-items:flex-start;background:#120e0e;border:1px solid #3a1f1f;border-radius:10px;padding:20px;margin-bottom:22px}
 .badge{flex:0 0 auto;font-family:Anton,Impact,sans-serif;font-size:1.6rem;background:var(--hot);color:#fff;padding:6px 12px;border-radius:6px}
 .rg strong{color:var(--txt)}
-@media(max-width:560px){.row{grid-template-columns:1fr;gap:4px}button{width:100%}.hero{padding:56px 0}}
+@media(max-width:560px){.row{grid-template-columns:1fr;gap:4px}button{width:100%}.hero{padding:32px 0 20px}}
 </style>
 </head>
 <body>
@@ -85,7 +86,8 @@ footer{border-top:1px solid var(--line);padding:40px 0;font-size:.85rem;color:va
   <div class="tag">Injury report → Prop angles</div>
   <h1>When a starter goes down,<br><em>somebody eats.</em></h1>
   <p class="lead">Next Man Up is a free newsletter for big betting days. We flag the injuries that matter — and, more importantly, the backups stepping in and the players whose matchups just got easier — as player-prop angles worth a look.</p>
-  <div class="signup">
+  <div class="signup" id="signup">
+    <p class="signup-pitch">Get the next-man-up props before the lines move. Free, Thu/Sat/Sun. Join and get the free <a href="/cheatsheet/">Sunday Inactives &amp; Backup-Player Cheat Sheet</a>.</p>
     <form class="kit-form" action="https://app.kit.com/forms/10054986/subscriptions" method="post" data-sv-form="10054986" data-uid="9f09dc0a8d">
       <label class="sr" for="em1">Email address</label>
       <input id="em1" class="kit-input" type="email" name="email_address" placeholder="you@email.com" autocomplete="email" required>
